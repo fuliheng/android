@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="tw.edu.fgu.ai.myapplication.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_color"
+        android:layout_width="154dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/radioGroup"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:text="Change"
+        android:textAlignment="center"
+        android:textSize="28sp"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="124dp" />
+
+    <Button
+        android:id="@+id/bt_red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="red"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="291dp"
+        android:layout_marginBottom="29dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/tv_color"
+        android:layout_toStartOf="@+id/tv_color" />
+
+    <Button
+        android:id="@+id/bt_blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="blue"
+        tools:layout_editor_absoluteX="259dp"
+        tools:layout_editor_absoluteY="291dp"
+        android:layout_alignBaseline="@+id/bt_red"
+        android:layout_alignBottom="@+id/bt_red"
+        android:layout_toRightOf="@+id/tv_color"
+        android:layout_toEndOf="@+id/tv_color" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/bt_blue"
+        android:layout_toStartOf="@+id/bt_blue">
+
+        <RadioButton
+            android:id="@+id/rb_pink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GREEN" />
+
+        <RadioButton
+            android:id="@+id/rb_orgin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="YELLO" />
+
+        <RadioButton
+            android:id="@+id/rb_black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="BLACK" />
+
+    </RadioGroup>
+
+</RelativeLayout>
